@@ -1,7 +1,81 @@
 <!DOCTYPE html>
-<html>
-  <head><title>Test Page</title></head>
-  <body>
-    <h1>GitHub Pages is working!</h1>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trains, Airplanes, and Riverboats</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #eee;
+    }
+    header {
+      background-color: #222;
+      padding: 1em;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      background-color: #333;
+      padding: 0.5em;
+    }
+    nav a {
+      color: #eee;
+      text-decoration: none;
+      padding: 0.3em 0.6em;
+      border-radius: 4px;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1em;
+      padding: 1em;
+    }
+    .card {
+      background-color: #222;
+      border: 1px solid #444;
+      padding: 1em;
+      border-radius: 6px;
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .card iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>Trains, Airplanes, and Riverboats</header>
+  <nav>
+    <a href="#trains">Trains</a>
+    <a href="#airplanes">Airplanes</a>
+    <a href="#riverboats">Riverboats</a>
+  </nav>
+  <div class="grid">
+    <div class="card" id="trains">
+      <h3>Live Train Cam</h3>
+      <iframe src="https://www.youtube.com/embed/live_stream?channel=UCTrainsChannelID" allowfullscreen></iframe>
+    </div>
+    <div class="card" id="airplanes">
+      <h3>Live Airplane Cam</h3>
+      <iframe src="https://www.youtube.com/embed/live_stream?channel=UCAirplanesChannelID" allowfullscreen></iframe>
+    </div>
+    <div class="card" id="riverboats">
+      <h3>Live Riverboat Cam</h3>
+      <iframe src="https://www.youtube.com/embed/live_stream?channel=UCRiverboatsChannelID" allowfullscreen></iframe>
+    </div>
+  </div>
+</body>
 </html>
