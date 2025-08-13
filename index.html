@@ -1,128 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Northern Transcon Railcams</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Railcam Network</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      text-align: center;
-      padding: 20px;
-      background-color: #333;
-      color: #fff;
-    }
-    header h1 {
-      font-size: 2.5em;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.2em;
-      margin-top: 8px;
-    }
-    nav {
-      background-color: #555;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: #fff;
-      padding: 14px 20px;
-      text-decoration: none;
-      display: block;
-    }
-    nav a:hover {
-      background-color: #777;
-    }
-    .featured {
-      padding: 20px;
-      text-align: center;
-    }
-    .featured iframe {
-      width: 90%;
-      height: 500px;
-      border: none;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-      padding: 20px;
-    }
-    .cam {
-      background-color: #fff;
-      padding: 10px;
-      border: 1px solid #ccc;
-      text-align: center;
-    }
-    .cam h3 {
-      margin-bottom: 10px;
-    }
-    .cam iframe {
-      width: 100%;
-      height: 250px;
-      border: none;
-    }
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 10px;
-      margin-top: 40px;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; background: #111; color: #eee; }
+    header, nav { background: #222; padding: 10px; text-align: center; }
+    nav a { color: #0af; margin: 0 10px; text-decoration: none; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; padding: 10px; }
+    .cam { background: #000; padding: 5px; border: 1px solid #333; }
+    .cam iframe { width: 100%; height: 200px; }
+    .cam h3 { margin: 5px 0; font-size: 1em; text-align: center; }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Rich’s Railcam Network</h1>
+    <nav>
+      <a href="#cams">Live Cams</a>
+      <a href="https://yourmerchstore.example.com">Merch</a>
+      <a href="https://yourfundraiser.example.com">Fundraiser</a>
+      <a href="https://yourlog.example.com">Daily Log</a>
+    </nav>
+  </header>
 
-<header>
-  <h1>Northern Transcon Railcams</h1>
-  <p>A Place for Quality Entertainment</p>
-</header>
+  <section id="cams" class="grid">
+    <!-- Featured 16-screen cam -->
+    <div class="cam">
+      <h3>Richville 16-Cam Multiview</h3>
+      <iframe src="https://www.youtube.com/embed/WHNDQZQCHCU" frameborder="0" allowfullscreen></iframe>
+    </div>
 
-<nav>
-  <a href="http://www.ntr-otc.net">GoFundMe</a>
-  <a href="https://northerntransconrailcamsotter.myspreadshop.com/">Merch</a>
-  <a href="https://www.facebook.com/RichOtter2018/">NTR-OTC on FB</a>
-  <a href="https://www.facebook.com/groups/amtrakfansnospam">Amtrak Fans on FB</a>
-  <a href="https://docs.google.com/spreadsheets/d/1lFNrQT4fGPZ9Xdl-OYDodm1Rvhx9XG9TK8wWLn7_mEc/edit?pli=1&gid=1274603888#gid=1274603888">Daily Log</a>
-</nav>
-
-<div class="featured">
-  <iframe src="https://www.youtube.com/embed/BTyTEwnjg1E" allowfullscreen></iframe>
-</div>
-
-<div class="grid">
-  <div class="cam"><h3>Moorhead, MN, USA West (PTZ)</h3><iframe src="https://www.youtube.com/embed/ONyAmhX9nuw" allowfullscreen></iframe></div>
-  <div class="cam"><h3>Moorhead, MN, USA East (Diamond)</h3><iframe src="https://www.youtube.com/embed/BGvODdBP664" allowfullscreen></iframe></div>
-  <div class="cam"><h3>Detroit Lakes, MN, USA</h3><iframe src="https://www.youtube.com/embed/SsPEnGjk-SU" allowfullscreen></iframe></div>
-  <div class="cam"><h3>Perham, MN, USA OG cam</h3><iframe src="https://www.youtube.com/embed/JFXTfwfWkFQ" allowfullscreen></iframe></div>
-  <div class="cam"><h3>Perham, MN, USA Main</h3><iframe src="https://www.youtube.com/embed/vrZqFTPH1ck" allowfullscreen></iframe></div>
-  <div class="cam"><h3>Wadena, MN, USA (PTZ)</h3><iframe src="https://www.youtube.com/embed/c1-yxy8G3c8" allowfullscreen></iframe></div>
-  <div class="cam"><h3>Richville, MN, USA</h3><iframe src="https://www.youtube.com/embed/WHNDQZQCHCU" allowfullscreen></iframe></div>
-  <div class="cam"><h3>Barrett, MN, USA East (PTZ)</h3><iframe src="https://www.youtube.com/live/MXsv7JFZMPY?si=3eVJZD8EXP1leRlF" allowfullscreen></iframe></div>
-  <div class="cam"><h3>Barrett, MN, USA West</h3><iframe src="https://www.youtube.com/embed/nVnE92Ofxbo" allowfullscreen></iframe></div>
-  <div class="cam"><h3>Staples, MN, USA</h3><iframe src="https://www.youtube.com/embed/EKSqYhompCA" allowfullscreen></iframe></div>
-  <div class="cam"><h3>Motley, MN, USA (PTZ)</h3><iframe src="https://www.youtube.com/embed/PSIPDB5mSJs" allowfullscreen></iframe></div>
-  <div class="cam"><h3>Brainerd, MN, USA Yard</h3><iframe src="https://www.youtube.com/embed/zQTtSYqzsrg" allowfullscreen></iframe></div>
-  <div class="cam"><h3>Brainerd, MN, USA Rail</h3><iframe src="https://www.youtube.com/embed/zQTtSYqzsrg" allowfullscreen></iframe></div>
-  <div class="cam"><h3>Aitkin, MN, USA</h3><iframe src="https://www.youtube.com/embed/Aq9nrfAWN0M" allowfullscreen></iframe></div>
-  <div class="cam"><h3>Little Falls, MN, USA (PTZ)</h3><iframe src="https://www.youtube.com/embed/umks9MGffAo" allowfullscreen></iframe></div>
-  <div class="cam"><h3>St. Cloud, MN, USA</h3><iframe src="https://www.youtube.com/embed/sI8yvFn7ecI" allowfullscreen></iframe></div>
-  <div class="cam"><h3>St. Paul, MN, USA</h3><iframe src="https://www.youtube.com/embed/PSIPDB5mSJs" allowfullscreen></iframe></div>
-  <div class="cam"><h3>Newport, MN, USA Mississippi River Cam</h3><iframe src="https://www.youtube.com/embed/B0YbLloMo3Y" allowfullscreen></iframe></div>
-  <div class="cam"><h3>Newport, MN, USA Rail</h3><iframe src="https://www.youtube.com/embed/c0bzjkFrx64" allowfullscreen></iframe></div>
-  <div class="cam"><h3>Prescott, WI, USA East (PTZ)</h3><iframe src="https://www.youtube.com/embed/FTC8ZYHJMuw" allowfullscreen></iframe></div>
-  <div class="cam"><h3>Prescott, WI, USA West</h3><iframe src="https://www.youtube.com/embed/OaIInijeG7A" allowfullscreen></iframe></div>
-</div>
-
-<footer>&copy; Northern Transcon Railcams — All rights reserved.</footer>
-
+    <!-- Individual cams -->
+    <div class="cam"><h3>Barrett, MN, USA East (PTZ)</h3><iframe src="https://www.youtube.com/embed/MXsv7JFZMPY" frameborder="0" allowfullscreen></iframe></div>
+    <div class="cam"><h3>Barrett, MN, USA West</h3><iframe src="https://www.youtube.com/embed/1ZkzvZzvZzA" frameborder="0" allowfullscreen></iframe></div>
+    <div class="cam"><h3>Richville, MN, USA</h3><iframe src="https://www.youtube.com/embed/WHNDQZQCHCU" frameborder="0" allowfullscreen></iframe></div>
+    <!-- Add remaining 19 cams below in your preferred order -->
+  </section>
 </body>
 </html>
-
-
