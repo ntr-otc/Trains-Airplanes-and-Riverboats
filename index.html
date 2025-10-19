@@ -92,8 +92,8 @@
     <iframe src="https://www.youtube.com/embed/BTyTEwnjg1E?si=S3rxks7p1yaAOfTf" frameborder="0" allowfullscreen></iframe>
   </div>
 
- <div style="display: flex; align-items: flex-start;">
-  <div class="grid" style="flex: 1;">
+ <div class="grid">
+
 
     <div class="cam"><iframe src="https://www.youtube.com/embed/38uaKXO_QNk?si=aHaTqnB3A-DuLqo0" frameborder="0" allowfullscreen></iframe><h3>Pacific, MO, USA (PTZ)</h3></div>
     <div class="cam"><iframe src="https://www.youtube.com/embed/ONyAmhX9nuw?si=UjSZPuNFsewm1QWO" frameborder="0" allowfullscreen></iframe><h3>Moorhead, MN, USA West (PTZ)</h3></div>
@@ -127,30 +127,29 @@
     allowfullscreen>
   </iframe>
 </div>    
-    <div style="width: 250px; padding: 1em;">
-  <a class="weatherwidget-io"
-     href="https://forecast7.com/en/46d57n95d59/56573/"
-     data-label_1="PERHAM"
-     data-label_2="WEATHER"
-     data-theme="original"
-     data-basecolor="#333"
-     data-accent="#f4f4f4"
-     data-textcolor="#ffffff"
-     data-highcolor="#ffcc00"
-     data-lowcolor="#00ccff"
-     data-unit="us">PERHAM WEATHER</a>
-  <script>
-    !function(d,s,id){
-      var js,fjs=d.getElementsByTagName(s)[0];
-      if(!d.getElementById(id)){
-        js=d.createElement(s);js.id=id;
-        js.src='https://weatherwidget.io/js/widget.min.js';
-        fjs.parentNode.insertBefore(js,fjs);
-      }
-    }(document,'script','weatherwidget-io-js');
-  </script>
-</div>
+   <div style="display: flex; align-items: flex-start;">
+  <div style="width: 250px; padding: 1em;">
+    <a class="weatherwidget-io"
+       href="https://forecast7.com/en/46d57n95d59/56573/?unit=us"
+       data-label_1="PERHAM"
+       data-label_2="WEATHER"
+       data-theme="original">PERHAM WEATHER</a>
+    <script>
+      !function(d,s,id){
+        var js,fjs=d.getElementsByTagName(s)[0];
+        if(!d.getElementById(id)){
+          js=d.createElement(s);js.id=id;
+          js.src='https://weatherwidget.io/js/widget.min.js';
+          fjs.parentNode.insertBefore(js,fjs);
+        }
+      }(document,'script','weatherwidget-io-js');
+    </script>
+  </div>
+
+  <div class="grid" style="flex: 1;">
+
     <div class="
+
 
 
 
