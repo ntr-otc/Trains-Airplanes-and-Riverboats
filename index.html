@@ -88,13 +88,33 @@
 </header>
 
 
- <div style="display: flex; align-items: flex-start; justify-content: center; gap: 2em; padding: 1em;">
+<div style="display: flex; justify-content: center; align-items: flex-start; gap: 2em; padding: 1em;">
   <div style="flex: 1; max-width: 800px;">
     <iframe src="https://www.youtube.com/embed/BTyTEwnjg1E?si=S3rxks7p1yaAOfTf"
             frameborder="0"
             allowfullscreen
             style="width: 100%; height: 500px;"></iframe>
   </div>
+
+  <div style="width: 250px;">
+    <a class="weatherwidget-io"
+       href="https://forecast7.com/en/46d57n95d59/56573/?unit=us"
+       data-label_1="PERHAM"
+       data-label_2="WEATHER"
+       data-theme="original">PERHAM WEATHER</a>
+    <script>
+      !function(d,s,id){
+        var js,fjs=d.getElementsByTagName(s)[0];
+        if(!d.getElementById(id)){
+          js=d.createElement(s);js.id=id;
+          js.src='https://weatherwidget.io/js/widget.min.js';
+          fjs.parentNode.insertBefore(js,fjs);
+        }
+      }(document,'script','weatherwidget-io-js');
+    </script>
+  </div>
+</div>
+
 
   <div style="width: 250px;">
     <a class="weatherwidget-io"
@@ -213,6 +233,7 @@
   <div class="grid" style="flex: 1;">
 
     <div class="
+
 
 
 
